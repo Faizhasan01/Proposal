@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 300% 300%;
+    /*background: url('https://tenor.com/view/cafe-anime-gif-18755656://media.giphy.com/media/JQqnoY079ckIM/giphy.gif') no-repeat center center fixed;*/
+    animation: gradient 5s ease infinite;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.gif {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff6f61;
+    margin-top: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: 2px solid #ff6f61;
+    padding: 10px 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #fad0c4;
+    background: #fff5f5;
+}
+
+button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+    background: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #e94d58;
+}

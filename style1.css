@@ -80,3 +80,27 @@ button:hover {
     background: #3949ab;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .gif {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding: 0 10px;
+    }
+
+    button {
+        width: 120px;
+        font-size: 1em;
+    }
+
+    button:nth-child(1) {
+        margin-left: -130px;
+    }
+
+    button:nth-child(2) {
+        margin-right: -130px;
+    }
+}

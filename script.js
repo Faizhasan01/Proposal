@@ -26,7 +26,7 @@ startButton.addEventListener("click", () => {
         document.body.innerHTML = `
             <div class='wrapper'>
                 <h2 class='question'>Hello ${input}! Will you go out with me?</h2>
-                <img class='gif' alt='Oops' src="img/heart.gif"/>
+                <img class='gif' alt='Oops' src="Img/heart.gif"/>
                 <div class='btn-group'>
                     <button class='yes-btn'>Yes</button>
                     <button class='no-btn' style="position: absolute;">No</button>
@@ -51,20 +51,20 @@ function yesButtonListener() {
     document.body.innerHTML = `
         <div class='wrapper'>
             <h2 class='question'>Yay! Thank you, tHaNk YOU :) ❤️, ${input}! My Insta (fizz_hs9)</h2>
-            <img class='gif' alt='gif' src="img/myaowl-cute.gif"/>
+            <img class='gif' alt='gif' src="Img/myaowl-cute.gif"/>
         </div>
     `;
 }
 
 function noButtonListener() {
     if (count < 5) {
-        gifMain.src = "img/cute-crying.gif";
+        gifMain.src = "Img/cute-crying.gif";
         questionMain.innerHTML = "You don't wanna go out with me?";
     } else if (count >= 5 && count < 10) {
-        gifMain.src = "img/stop.gif";
+        gifMain.src = "Img/stop.gif";
         questionMain.innerHTML = "Stop playing with me! Don't you wanna go out with me?!";
     } else {
-        gifMain.src = "img/bunny-nope.gif";
+        gifMain.src = "Img/bunny-nope.gif";
         questionMain.innerHTML = "JUST ANSWER IT! YOU WANNA GO OR NOT?!";
     }
 

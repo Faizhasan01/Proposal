@@ -50,7 +50,7 @@ startButton.addEventListener("click", () => {
 function yesButtonListener() {
     document.body.innerHTML = `
         <div class='wrapper'>
-            <h2 class='question'>Yay! Thank you, tHaNk YOU :) ❤️, ${input}! My Insta (fizz_hs9)</h2>
+            <h2 class='question'>Yay! Thank you, tHaNk YOU :) ❤️, ${input}!</h2>
             <img class='gif' alt='gif' src="Img/myaowl-cute.gif"/>
         </div>
     `;
@@ -90,4 +90,5 @@ function noButtonListener() {
 
     count += 1;
 }
+
 
